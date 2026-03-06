@@ -1,9 +1,4 @@
-body {
-    background-color: skyblue;
-    color: greenyellow;
-    text-align: center;
-}
-/* Робимо сайт "повітряним" */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -33,4 +28,5 @@ button {
 
 button:hover {
     background-color: #0056b3;
+
 }
