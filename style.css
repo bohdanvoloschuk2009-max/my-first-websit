@@ -1,0 +1,36 @@
+body {
+    background-color: skyblue;
+    color: greenyellow;
+    text-align: center;
+}
+/* Робимо сайт "повітряним" */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto; /* Центруємо сайт */
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Оформлення блоку з коментарями */
+#comments-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px; /* Округлі кути */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Легка тінь для глибини */
+}
+
+/* Стиль для кнопки */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
