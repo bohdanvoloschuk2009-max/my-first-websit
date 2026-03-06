@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>hello world it's bodya</h1>
+    <p>Це мій перший сайт, створений у VS Code.</p>
+    
+    <img src="foto.jpg" alt="картинка" width="300">
+    
+    <br>
+    <button id="myBtn">Тикай!</button>
+
+    <hr>
+    <h3>Залишити коментар:</h3>
+    <input type="text" id="userInput" placeholder="Напишіть щось...">
+    <button id="sendBtn">Надіслати</button>
+
+    <div id="commentsSection"></div>
+
+    <script>
+        // Перша кнопка
+        const button = document.getElementById('myBtn');
+        button.addEventListener('click', function() {
+            alert('ураааааааааааааа супер клас наруто');
+            document.body.style.backgroundColor = 'yellow';
+        });
+
+        // Друга кнопка (коментарі)
+        const input = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const section = document.getElementById('commentsSection');
+
+        sendBtn.addEventListener('click', function() {
+            const text = input.value;
+            // Це все ще небезпечний код (XSS), але тепер він працює правильно
+            section.innerHTML += `<p>Користувач каже: ${text}</p>`;
+            input.value = '';
+        });
+    </script>
+</body>
+</html>
