@@ -38,9 +38,12 @@
         sendBtn.addEventListener('click', function() {
             const text = input.value;
             // Це все ще небезпечний код (XSS), але тепер він працює правильно
-            section.innerHTML += `<p>Користувач каже: ${text}</p>`;
+            const newComment = document.createElement('p'); // 1. Створюємо "безпечну" коробку для тексту
+newComment.textContent = `Користувач каже: ${text}`; // 2. Вкладаємо туди тільки текст
+section.appendChild(newComment); // 3. Прикріплюємо на сторінку
             input.value = '';
         });
     </script>
 </body>
+
 </html>
